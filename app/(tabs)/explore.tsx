@@ -6,6 +6,7 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
+import { CardGrid } from '@/components/CardGrid';
 
 export default function TabTwoScreen() {
   return (
@@ -20,8 +21,9 @@ export default function TabTwoScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
+        <ThemedText type="title">Explore Topics</ThemedText>
       </ThemedView>
+      <CardGrid />
       <ThemedText>This app includes example code to help you get started.</ThemedText>
       <Collapsible title="File-based routing">
         <ThemedText>
@@ -105,5 +107,6 @@ const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: 'row',
     gap: 8,
+    marginBottom: 24,
   },
 });
